@@ -155,12 +155,12 @@ function CircleEntity(x, y, radius, type, restitution, deceleration) {
 		//左辺衝突
 		else if (nx == r.x) {
 			//右方向へ反転
-			my = -overlap;
+			mx = -overlap;
 		}
 		//右辺衝突
 		else if (nx == r.x + r.w) {
 			//左方向へ反転
-			my = overlap;
+			mx = overlap;
 		}
 		//矩形の中
 		else {
